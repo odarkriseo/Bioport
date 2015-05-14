@@ -1,0 +1,5 @@
+apply plugin: 'eclipse-wtp'
+
+dependencies {
+	compile project(':service')
+}
