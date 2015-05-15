@@ -1,8 +1,18 @@
-subprojects {
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+	}
+}
 
+subprojects {
+	
     apply plugin: 'java'
     apply plugin: 'eclipse'
-
+	apply plugin: 'spring-boot'
+	
     repositories {
        mavenCentral()
     }
